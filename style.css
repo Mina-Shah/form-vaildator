@@ -1,5 +1,4 @@
 body {
-    margin: 0;
     background-color: rgb(13, 196, 37);
     display: flex;
     align-items: center;
@@ -17,6 +16,7 @@ body {
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
     border-radius: 0.5rem;
+    padding-left: 0.2rem;
 }
 
 @media only screen and (min-width: 375px) {
@@ -142,12 +142,45 @@ body {
 h1 {
     text-align: center;
     font-size: 1.6rem;
-    padding-top: 2rem;
+    padding-top: 1rem;
 }
 
 .username {
     color: grey;
     margin-left: 2.5rem;
+    margin-bottom: 0rem;
+    margin-top: 0.5rem;
+}
+
+.alert1{
+    color: red;
+    font-size: 0.8rem;
+    margin-left: 2.5rem ;
+    margin-top: 0.2rem;
+    margin-bottom: 0rem;
+}
+
+.alert2{
+    color: red;
+    font-size: 0.8rem;
+    margin-left: 2.5rem ;
+    margin-top: 0.2rem;
+    margin-bottom: 0rem;
+}
+
+.alert3{
+    color: red;
+    font-size: 0.8rem;
+    margin-left: 2.5rem ;
+    margin-top: 0.2rem;
+    margin-bottom: 0rem;
+}
+
+.alert4{
+    color: red;
+    font-size: 0.8rem;
+    margin-left: 2.5rem ;
+    margin-top: 0.2rem;
     margin-bottom: 0rem;
 }
 
@@ -158,18 +191,13 @@ h1 {
     padding: 0.6rem;
     margin-left: 2.5rem;
     margin-top: 0.5rem;
-    margin-bottom: 0.8rem;
-}
-
-.input-username :hover {
-    border-color: black;
 }
 
 .email {
     color: grey;
     margin-left: 2.5rem;
     margin-bottom: 0rem;
-
+    margin-top: 0.5rem;
 }
 
 .input-email {
@@ -179,13 +207,13 @@ h1 {
     padding: 0.6rem;
     margin-left: 2.5rem;
     margin-top: 0.5rem;
-    margin-bottom: 0.8rem;
 }
 
 .password {
     color: grey;
     margin-left: 2.5rem;
     margin-bottom: 0rem;
+    margin-top: 0.5rem;
 }
 
 .input-password {
@@ -195,13 +223,13 @@ h1 {
     padding: 0.6rem;
     margin-left: 2.5rem;
     margin-top: 0.5rem;
-    margin-bottom: 0.8rem;
 }
 
 .confirm-password {
     color: grey;
     margin-left: 2.5rem;
     margin-bottom: 0rem;
+    margin-top: 0.5rem;
 }
 
 .input-confirm-password {
@@ -211,7 +239,6 @@ h1 {
     padding: 0.6rem;
     margin-left: 2.5rem;
     margin-top: 0.5rem;
-    margin-bottom: 2rem;
 }
 
 .submit-button {
@@ -223,5 +250,5 @@ h1 {
     border-radius: 0.3rem;
     width: 14.5rem;
     margin-left: 2.5rem;
-    margin-top: 0rem;
+    margin-top: 2rem;
 }
