@@ -21,12 +21,7 @@ function getUsername(e) {
         inputUsername.style.borderColor = 'green'
         alertBox1.textContent = '';
     }
-}
 
-
-sumbitButton.addEventListener('click', getEmail)
-function getEmail(e) {
-    e.preventDefault();
     const emailValue = inputEmail.value;
 
     if (emailValue.length < 3) {
@@ -36,12 +31,7 @@ function getEmail(e) {
         inputEmail.style.borderColor = 'green'
         alertBox2.textContent = '';
     }
-}
 
-
-sumbitButton.addEventListener('click', getPassword)
-function getPassword(e) {
-    e.preventDefault();
     const passwordValue = inputPassword.value;
 
     if (passwordValue.length < 6) {
@@ -51,12 +41,7 @@ function getPassword(e) {
         inputPassword.style.borderColor = 'green'
         alertBox3.textContent = '';
     }
-}
 
-
-sumbitButton.addEventListener('click', getConfirmPassword)
-function getConfirmPassword(e) {
-    e.preventDefault();
     const confirmPasswordValue = inputConfirmPassword.value;
 
     if (confirmPasswordValue.length < 6) {
