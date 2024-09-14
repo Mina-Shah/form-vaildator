@@ -1,46 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form Validatior</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
+  <body>
     <main>
-        <div class="container">
-            <h1>Register With Us</h1>
+      <div class="form-wrapper">
+        <form class="container">
+          <h1 class="form-heading">Register With Us</h1>
 
+          <div class="inputs-wrapper">
             <div>
-                <p class="username">Username</p>
-                <input type="text" class="input-username" placeholder="Enter username">
-            </div>
-
-            <div>
-                <p class="email">Email</p>
-                <input type="text" class="input-email" placeholder="Enter email">
-
-            </div>
-            <div>
-                <p class="password">Password</p>
-                <input type="text" class="input-password" placeholder="Enter password">
-
+              <label class="username" for="username">Username</label>
+              <input
+                type="text"
+                id="username"
+                class="input input-username"
+                placeholder="Enter username"
+              />
             </div>
             <div>
-                <p class="confirm-password">Confirm Password</p>
-                <input type="text" class="input-confirm-password" placeholder="Enter password again">
+              <label class="email" for="email">Email</label>
+              <input
+                type="text"
+                id="email"
+                class="input input-email"
+                placeholder="Enter email"
+              />
             </div>
-
             <div>
-                <button class="submit-button">Submit</button>
+              <label class="password" for="password">Password</label>
+              <input
+                type="text"
+                id="password"
+                class="input input-password"
+                placeholder="Enter password"
+              />
             </div>
+            <div>
+              <label class="confirm-password" for="confirm-password"
+                >Confirm Password</label
+              >
+              <input
+                type="text"
+                id="confirm-password"
+                class="input input-confirm-password"
+                placeholder="Enter password again"
+              />
+            </div>
+          </div>
 
-        </div>
-
+          <button type="submit" class="submit-button">Submit</button>
+        </form>
+      </div>
     </main>
     <script src="index.js"></script>
-</body>
-
+  </body>
 </html>
