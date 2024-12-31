@@ -43,13 +43,14 @@ function getInput(e) {
     }
 
     const confirmPasswordValue = inputConfirmPassword.value;
-
-    if (confirmPasswordValue.length < 6) {
-        inputConfirmPassword.style.borderColor = 'red'
-       confirmPasswordAlertBox.textContent = 'Password 2 is required'
+    if (confirmPasswordValue !== passwordValue) {
+        inputConfirmPassword.style.borderColor = 'red';
+        confirmPasswordAlertBox.textContent = 'Passwords do not match';
+    } else if (confirmPasswordValue.length < 6) {
+        inputConfirmPassword.style.borderColor = 'red';
+        confirmPasswordAlertBox.textContent = 'Password 2 is required';
     } else {
-        inputConfirmPassword.style.borderColor = 'green'
-       confirmPasswordAlertBox.textContent = '';
-
+        inputConfirmPassword.style.borderColor = 'green';
+        confirmPasswordAlertBox.textContent = '';
     }
 }

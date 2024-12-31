@@ -4,7 +4,11 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
-
+body{
+   background-image: url("images/bg.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+}
 label{
     display: block;
     margin-bottom: 0.5rem;
@@ -18,9 +22,11 @@ label{
 }
 
 .container{
+    background-color: white;
     padding: 3rem 5rem;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     border-radius: 16px;
+    animation: fadeIn 0.7s ease-in-out;
 }
 
 .form-heading{
@@ -39,6 +45,14 @@ label{
     margin-top: 2rem;
     width: 100%;
     padding: 0.5rem;
+    background-color: lightcoral;
+    border-color: lightcoral;
+    color: white;
+    border-radius: 0.5rem;
+}
+
+  .submit-button:hover {
+        background-color: rgb(240, 146, 146)
 }
 
 .input{
@@ -64,3 +78,14 @@ label{
         padding: 3rem 2rem;
     }
 }
+
+@keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(-20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
